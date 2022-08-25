@@ -48,8 +48,8 @@
 .close {
     position: absolute;
     cursor: pointer;
-    top: 7px;
-    left: 7px;
+    top: 10px;
+    right: 10px;
 }
 
 .close img {
