@@ -3,6 +3,10 @@
     width: max-content;
 }
 
+.map img {
+    height: 50vh;
+}
+
 .clickable {
     position: absolute;
     width: 25px;
