@@ -9,53 +9,101 @@
 
 .clickable {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    height: 35px;
     cursor: pointer;
+}
+
+.marker {
+    height: 100%;
 }
 
 .popup {
     display: none;
     position: absolute;
-    width: 200px;
-    height: 100px;
+    min-width: 280px;
+    z-index: 1;
 }
 
 .close {
     position: absolute;
     cursor: pointer;
-    top: 3px;
-    left: 3px;
+    top: 7px;
+    left: 7px;
 }
 
 .close img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .inner {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     border-radius: 8px;
     background-color: aliceblue;
     cursor: unset;
+    flex-direction: column;
+    padding: 25px 25px 20px 25px;
+    box-shadow: 2px 2px 6px 6px rbga(0,0,0,0.2);
+}
+
+.inner .head {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.inner > div:not(.head) {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+#montferland {
+    left: 66%;
+    top: 71%;
+}
+
+#beuningen {
+    top: 77%;
+    left: 39%;
+}
+
+#arnhem {
+    left: 47%;
+    top: 60%;
+}
+
+#druten {
+    top: 75%;
+    left: 32%;
+}
+
+#nijmegen {
+    top: 80%;
+    left: 44%;
+}
+
+#lochem {
+    top: 48%;
+    left: 84%;
+}
+
+#renkum {
+    top: 61%;
+    left: 41%;
+}
+
+#overbetuwe {
+    top: 70%;
+    left: 41%;
+}
+
+#heumen {
+    top: 87%;
+    left: 43%;
 }
 
 #rozendaal {
     top: 56%;
-    left: 50%;
-}
-
-#putten {
-    top: 31%;
-    left: 29%;
-}
-
-#aalten {
-    left: 83%;
-    top: 71%;
+    left: 51%;
 }
