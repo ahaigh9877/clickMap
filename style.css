@@ -25,16 +25,24 @@
     height: 100%;
 }
 
+.clickable.active .marker {
+    filter: hue-rotate(100deg) drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);
+}
+
 .popup {
     display: none;
     position: absolute;
-    min-width: 280px;
+    min-width: 300px;
     z-index: 1;
     transform: translateX(-25%);
 }
 
 #lochem .popup {
     transform: translateX(-50%);
+}
+
+#nijmegen .popup {
+    min-width: 415px;
 }
 
 .close {
