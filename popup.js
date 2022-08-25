@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.marker').on('click',function(e){
         e.stopPropagation();
         $('.popup').hide('fast')
-        $(e.target).siblings('.popup').show('fast')
+        $(e.target).siblings('.popup').toggle('fast')
     })
 
     $('.popup').on('click',function(e){

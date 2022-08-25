@@ -1,5 +1,5 @@
 .outer {
-    padding-bottom: 11%;
+    padding-bottom: 13%;
     border: 1px solid #ccc;
     width: max-content;
     margin: 0 auto;
@@ -30,6 +30,11 @@
     position: absolute;
     min-width: 280px;
     z-index: 1;
+    transform: translateX(-25%);
+}
+
+#lochem .popup {
+    transform: translateX(-50%);
 }
 
 .close {
