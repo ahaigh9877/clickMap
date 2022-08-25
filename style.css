@@ -1,3 +1,10 @@
+.outer {
+    padding-bottom: 11%;
+    border: 1px solid #ccc;
+    width: max-content;
+    margin: 0 auto;
+}
+
 .container {
     position: relative;
     width: max-content;
@@ -32,8 +39,8 @@
 }
 
 .close img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 .inner {
@@ -45,7 +52,7 @@
     cursor: unset;
     flex-direction: column;
     padding: 25px 25px 20px 25px;
-    box-shadow: 2px 2px 6px 6px rbga(0,0,0,0.2);
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.2);
 }
 
 .inner .head {
