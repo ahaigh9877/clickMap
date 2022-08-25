@@ -1,9 +1,9 @@
-.map {
+.container {
     position: relative;
     width: max-content;
 }
 
-.map img {
+.map {
     height: 50vh;
 }
 
