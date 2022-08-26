@@ -1,5 +1,4 @@
 .outer {
-    padding-bottom: 13%;
     border: 1px solid #ccc;
     width: max-content;
     margin: 0 auto;
@@ -34,11 +33,11 @@
     position: absolute;
     min-width: 300px;
     z-index: 1;
-    transform: translateX(-25%);
+    transform: translate(-15%,-120%);
 }
 
 #lochem .popup {
-    transform: translateX(-50%);
+    transform: translate(-50%,-120%);
 }
 
 #nijmegen .popup {
