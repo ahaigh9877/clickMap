@@ -1,19 +1,27 @@
 $(document).ready(function(){
+    $('.clickable').on('click',function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $('.popup',this).hide('fast');
+        } else {
+            hideOtherPopups();
+            $(this).addClass('active');
+            $('.popup',this).show('fast');
+        }
+    });
 
-    $('.marker').on('click',function(e){
-        // e.stopPropagation();
-        const thisPopup = $(e.target).siblings('.popup')
-        $('.popup').not(thisPopup).hide('fast')
-        thisPopup.toggle('fast')
-        $('.clickable').removeClass('active')
-        $(this).closest('.clickable').addClass('active')
-    })
     $('.close').on('click',function(e){
-        $(e.target).closest('.popup').hide('fast')
-        $('.clickable').removeClass('active')
-    })
-    $('.map').on('click',function(){
-        $('.popup').hide('fast')
-        $('.clickable').removeClass('active')
-    })
-})
+        e.stopPropagation();
+        $(this).closest('.popup').hide('fast');
+        $('.clickable').removeClass('active');
+    });
+
+    $('.inner').on('click', e => e.stopPropagation());
+
+    $('.map').on('click', () => hideOtherPopups());
+});
+
+function hideOtherPopups(){
+    $('.popup').hide('fast');
+    $('.clickable').removeClass('active');
+}

@@ -63,7 +63,7 @@
     display: flex;
     border-radius: 8px;
     background-color: aliceblue;
-    cursor: unset;
+    cursor: default;
     flex-direction: column;
     padding: 25px 25px 20px 25px;
     box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.2);
