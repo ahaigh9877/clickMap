@@ -1,0 +1,19 @@
+{
+  "name": "clickmap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "popup.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahaigh9877/clickMap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahaigh9877/clickMap/issues"
+  },
+  "homepage": "https://github.com/ahaigh9877/clickMap#readme"
+}
